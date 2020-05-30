@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
+    <Label text="Easy offline chat" />
+    <TextArea fx:id="mChat" editable="false" />
+    <GridPane hgap="1" vgap="2">
+        <TextField fx:id="eText" onKeyPressed="#eTextKeyPressed" prefWidth="200" GridPane.columnIndex="1" />
+        <Button fx:id="btnSend" alignment="BOTTOM_RIGHT" onAction="#btnSendClick" text="send" GridPane.columnIndex="2"/>
+    </GridPane>
+</VBox>
